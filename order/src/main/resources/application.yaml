@@ -1,0 +1,33 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+server:
+  #服务端口号
+  port: 8080
+
+spring:
+  data:
+    #MongoDB configuration
+    mongodb:
+      host1: mongo1
+      host2: mongo2
+      host3: mongo3
+      port1: 27017
+      port2: 27018
+      port3: 27019
+      database: oomall_demo
+      username: demouser
+      password: 123456
+
+  jackson:
+    #JSON的时间数据的时区
+    time-zone: GMT+8
+
+logging:
+  level:
+    org.mongodb.driver.protocol.command: DEBUG
+
+
